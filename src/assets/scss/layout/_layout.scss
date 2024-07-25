@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  background-color: $light-grey-color;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 90px 16px 0;
+}

@@ -1,4 +1,4 @@
-@forward './base/normalize';
-@forward './base/typography';
-@forward './abstracts/variables';
-@forward './layout/layout';
+@import './base/normalize';
+@import './base/typography';
+@import './abstracts/variables';
+@import './layout/layout';
