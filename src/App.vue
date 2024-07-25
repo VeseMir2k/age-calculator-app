@@ -1,5 +1,15 @@
-<script setup lang="ts"></script>
-
 <template>
-  <main class="main">dsasdad</main>
+  <CalculatorAge />
 </template>
+
+<script>
+import CalculatorAge from './components/CalculatorAge.vue'
+
+export default {
+  name: 'App',
+  components: { CalculatorAge },
+  setup() {
+    return {}
+  }
+}
+</script>
