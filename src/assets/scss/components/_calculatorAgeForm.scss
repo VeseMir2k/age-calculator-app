@@ -1,0 +1,19 @@
+.form {
+  display: flex;
+  gap: 16px;
+
+  &__label {
+    @include HeadingS-mobile;
+    margin-bottom: 4px;
+    color: $grey-color;
+  }
+
+  &__input {
+    width: 100%;
+    @include HeadingM-mobile;
+    padding: 16px;
+    border: 1px solid $line-color;
+    border-radius: 8px;
+    outline: none;
+  }
+}
