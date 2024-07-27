@@ -6,6 +6,7 @@
     <button class="form__button button">
       <img class="form__button__icon" src="../assets/images/icon-arrow.svg" alt="" />
     </button>
+    <span></span>
   </form>
 </template>
 
