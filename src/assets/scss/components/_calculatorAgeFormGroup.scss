@@ -1,0 +1,16 @@
+.form-group {
+  &__label {
+    @include HeadingS-mobile;
+    color: $grey-color;
+    margin-bottom: 4px;
+  }
+
+  &__input {
+    @include HeadingM-mobile;
+    border: 1px solid $line-color;
+    border-radius: 8px;
+    outline: none;
+    padding: 16px;
+    width: 100%;
+  }
+}
