@@ -7,6 +7,7 @@
       type="text"
       :name="name"
       :placeholder="placeholder"
+      @input="(e) => $emit('update:modelValue', e.target.value)"
     />
   </div>
 </template>

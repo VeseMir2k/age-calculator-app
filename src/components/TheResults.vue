@@ -1,8 +1,8 @@
 <template>
   <div class="results">
-    <ResultsItem text="years" />
-    <ResultsItem text="months" />
-    <ResultsItem text="days" />
+    <ResultsItem :result="yearsAge" text="years" />
+    <ResultsItem :result="monthsAge" text="months" />
+    <ResultsItem :result="daysAge" text="days" />
   </div>
 </template>
 
@@ -11,6 +11,20 @@ import ResultsItem from './ResultsItem.vue'
 
 export default {
   name: 'AppResults',
-  components: { ResultsItem }
+  components: { ResultsItem },
+  props: {
+    daysAge: {
+      type: String,
+      required: true
+    },
+    monthsAge: {
+      type: String,
+      required: true
+    },
+    yearsAge: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
