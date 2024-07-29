@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  name: 'AppFormLine'
+  name: 'FormLine'
 }
 </script>

@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'AppFormButton'
+  name: 'FormButton'
 }
 </script>

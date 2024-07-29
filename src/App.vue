@@ -1,13 +1,13 @@
 <template>
   <div class="App">
-    <AppForm />
+    <TheForm />
   </div>
 </template>
 
 <script>
-import AppForm from './components/AppForm.vue'
+import TheForm from './components/TheForm.vue'
 export default {
   name: 'App',
-  components: { AppForm }
+  components: { TheForm }
 }
 </script>

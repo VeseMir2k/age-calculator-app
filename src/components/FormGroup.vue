@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'AppFormGroup',
+  name: 'FormGroup',
   props: {
     name: {
       type: String,
