@@ -1,15 +1,13 @@
 <template>
-  <CalculatorAge />
+  <div class="App">
+    <AppForm />
+  </div>
 </template>
 
 <script>
-import CalculatorAge from './components/CalculatorAge.vue'
-
+import AppForm from './components/AppForm.vue'
 export default {
   name: 'App',
-  components: { CalculatorAge },
-  setup() {
-    return {}
-  }
+  components: { AppForm }
 }
 </script>

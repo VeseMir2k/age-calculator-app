@@ -2,8 +2,8 @@
   <div class="form-group">
     <label class="form-group__label" :for="name">{{ labelText }}</label>
     <input
-      class="form-group__input"
       :id="name"
+      class="form-group__input"
       type="text"
       :name="name"
       :placeholder="placeholder"
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'CalculatorAgeFormInput',
+  name: 'AppFormGroup',
   props: {
     name: {
       type: String,
