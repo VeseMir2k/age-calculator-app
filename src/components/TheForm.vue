@@ -1,8 +1,20 @@
 <template>
   <form class="form" @submit.prevent="calculateAgeFunction">
     <FormGroup v-model="day" name="day" labelText="DAY" placeholder="DD" :error="errors.day" />
-    <FormGroup v-model="month" name="month" labelText="MONTH" placeholder="MM" />
-    <FormGroup v-model="year" name="year" labelText="YEAR" placeholder="YYYY" />
+    <FormGroup
+      v-model="month"
+      name="month"
+      labelText="MONTH"
+      placeholder="MM"
+      :error="errors.month"
+    />
+    <FormGroup
+      v-model="year"
+      name="year"
+      labelText="YEAR"
+      placeholder="YYYY"
+      :error="errors.year"
+    />
     <FormLine />
     <FormButton />
   </form>
@@ -41,12 +53,16 @@ export default {
 
     const calculateAgeFunction = () => {
       validateInput(day.value, 'day')
+      validateInput(month.value, 'month')
+      validateInput(year.value, 'year')
 
-      const birthDate = new Date(year.value, month.value - 1, day.value)
-      calculateAge.value(birthDate)
+      if (!errors.value.day && !errors.value.month && !errors.value.year) {
+        const birthDate = new Date(year.value, month.value - 1, day.value)
+        calculateAge.value(birthDate)
+      }
     }
 
-    return { day, month, year, calculateAgeFunction, errors }
+    return { day, month, year, errors, calculateAgeFunction }
   }
 }
 </script>
