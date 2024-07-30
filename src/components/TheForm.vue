@@ -46,8 +46,12 @@ export default {
     const validateInput = (value, type) => {
       errors.value[type] = ''
 
+      const num = parseInt(value, 10)
+
       if (!value) {
         errors.value[type] = 'Field is empty.'
+      } else if (isNaN(num)) {
+        errors.value[type] = `Invalid ${type}`
       }
     }
 
