@@ -52,6 +52,8 @@ export default {
         errors.value[type] = 'Field is empty.'
       } else if (isNaN(num)) {
         errors.value[type] = `Invalid ${type}`
+      } else if (type === 'day' && (num < 1 || num > 31)) {
+        errors.value[type] = 'Invalid day'
       }
     }
 
