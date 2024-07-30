@@ -54,6 +54,8 @@ export default {
         errors.value[type] = `Invalid ${type}`
       } else if (type === 'day' && (num < 1 || num > 31)) {
         errors.value[type] = 'Invalid day'
+      } else if (type === 'month' && (num < 1 || num > 12)) {
+        errors.value[type] = 'Invalid month'
       }
     }
 
