@@ -47,6 +47,9 @@ export default {
       errors.value[type] = ''
 
       const num = parseInt(value, 10)
+      const date = new Date()
+      console.log(date)
+      const currentYear = date.getFullYear()
 
       if (!value) {
         errors.value[type] = 'Field is empty.'
@@ -56,6 +59,8 @@ export default {
         errors.value[type] = 'Invalid day'
       } else if (type === 'month' && (num < 1 || num > 12)) {
         errors.value[type] = 'Invalid month'
+      } else if (type === 'year' && num > currentYear) {
+        errors.value[type] = 'Invalid year'
       }
     }
 
