@@ -14,15 +14,15 @@ export default {
   components: { ResultsItem },
   props: {
     daysAge: {
-      type: String,
+      type: Number,
       required: true
     },
     monthsAge: {
-      type: String,
+      type: Number,
       required: true
     },
     yearsAge: {
-      type: String,
+      type: Number,
       required: true
     }
   }
