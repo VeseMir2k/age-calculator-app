@@ -1,20 +1,8 @@
 <template>
   <form class="form" @submit.prevent="calculateAgeFunction">
-    <FormGroup v-model="day" name="day" labelText="DAY" placeholder="DD" :error="errors.day" />
-    <FormGroup
-      v-model="month"
-      name="month"
-      labelText="MONTH"
-      placeholder="MM"
-      :error="errors.month"
-    />
-    <FormGroup
-      v-model="year"
-      name="year"
-      labelText="YEAR"
-      placeholder="YYYY"
-      :error="errors.year"
-    />
+    <FormGroup v-model="day" name="day" labelText="DAY" placeholder="DD" :errors="errors" />
+    <FormGroup v-model="month" name="month" labelText="MONTH" placeholder="MM" :errors="errors" />
+    <FormGroup v-model="year" name="year" labelText="YEAR" placeholder="YYYY" :errors="errors" />
     <FormError v-if="errors.date" className="form-error" :error="errors.date" />
     <FormLine />
     <FormButton />
