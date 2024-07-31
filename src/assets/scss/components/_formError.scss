@@ -1,0 +1,17 @@
+.form-group-error {
+  position: absolute;
+  bottom: -21px;
+  left: 0;
+  @include Body-mobile;
+  color: $red-color;
+}
+
+.form-error {
+  position: absolute;
+  top: 88px;
+  left: 0;
+  right: 0;
+  @include Body-mobile;
+  color: $red-color;
+  //   text-align: center;
+}

@@ -12,7 +12,7 @@
       :class="{ 'form-group__input--error': error }"
       @input="(e) => $emit('update:modelValue', e.target.value)"
     />
-    <FormError v-if="error" :error="error" className="form-group__error" />
+    <FormError v-if="error" :error="error" className="form-group-error" />
   </div>
 </template>
 

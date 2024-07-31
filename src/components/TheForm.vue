@@ -15,6 +15,7 @@
       placeholder="YYYY"
       :error="errors.year"
     />
+    <FormError v-if="errors.date" className="form-error" :error="errors.date" />
     <FormLine />
     <FormButton />
   </form>
@@ -25,10 +26,11 @@ import { ref, toRefs } from 'vue'
 import FormGroup from './FormGroup.vue'
 import FormLine from './FormLine.vue'
 import FormButton from './FormButton.vue'
+import FormError from './FormError.vue'
 
 export default {
   name: 'TheForm',
-  components: { FormGroup, FormLine, FormButton },
+  components: { FormGroup, FormError, FormLine, FormButton },
   props: {
     calculateAge: {
       type: Function,
@@ -50,8 +52,8 @@ export default {
       const currentDate = new Date()
 
       const birthDate = new Date(year.value, month.value - 1, day.value)
-      console.log('BIRTH ' + birthDate)
-      console.log('CURRENT ' + currentDate)
+      // console.log('BIRTH ' + birthDate)
+      // console.log('CURRENT ' + currentDate)
 
       if (!value) {
         errors.value[type] = 'Field is empty'
@@ -66,7 +68,9 @@ export default {
       }
     }
 
-    const validateDate = () => {}
+    const validateDate = () => {
+      errors.value.date = 'Error test'
+    }
 
     const calculateAgeFunction = () => {
       validateInput(day.value, 'day')

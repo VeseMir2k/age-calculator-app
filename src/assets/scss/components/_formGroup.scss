@@ -19,11 +19,4 @@
       border-color: $red-color;
     }
   }
-  &__error {
-    position: absolute;
-    bottom: -21px;
-    left: 0;
-    @include Body-mobile;
-    color: $red-color;
-  }
 }
