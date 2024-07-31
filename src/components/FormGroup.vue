@@ -12,13 +12,16 @@
       :class="{ 'form-group__input--error': error }"
       @input="(e) => $emit('update:modelValue', e.target.value)"
     />
-    <span v-if="error" class="form-group__error">{{ error }} </span>
+    <FormError v-if="error" :error="error" className="form-group__error" />
   </div>
 </template>
 
 <script>
+import FormError from './FormError.vue'
+
 export default {
   name: 'FormGroup',
+  components: { FormError },
   props: {
     name: {
       type: String,
