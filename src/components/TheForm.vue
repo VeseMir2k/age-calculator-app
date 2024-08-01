@@ -64,7 +64,7 @@ export default {
       }
     }
 
-    const calculateAgeFunction = () => {
+    const validate = () => {
       validateInput(day.value, 'day')
       validateInput(month.value, 'month')
       validateInput(year.value, 'year')
@@ -72,6 +72,10 @@ export default {
       if (!errors.value.day && !errors.value.month && !errors.value.year) {
         validateDate()
       }
+    }
+
+    const calculateAgeFunction = () => {
+      validate()
 
       if (!errors.value.day && !errors.value.month && !errors.value.year && !errors.value.date) {
         const birthDate = new Date(year.value, month.value - 1, day.value)
