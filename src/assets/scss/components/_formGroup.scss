@@ -1,7 +1,7 @@
 .form-group {
   position: relative;
   &__label {
-    @include HeadingS-mobile;
+    @include HeadingS-font-mobile;
     color: $grey-color;
     margin-bottom: 4px;
     &--error {
@@ -9,7 +9,7 @@
     }
   }
   &__input {
-    @include HeadingM-mobile;
+    @include HeadingM-font-mobile;
     border: 1px solid $line-color;
     border-radius: 8px;
     outline: none;
@@ -17,6 +17,17 @@
     width: 100%;
     &--error {
       border-color: $red-color;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .form-group {
+    &__label {
+      @include HeadingS-font;
+    }
+    &__input {
+      @include HeadingM-font;
     }
   }
 }

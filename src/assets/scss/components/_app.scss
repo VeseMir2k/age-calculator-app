@@ -4,3 +4,10 @@
   border-radius: 24px;
   border-bottom-right-radius: 100px;
 }
+
+@media (min-width: 872px) {
+  .App {
+    width: 840px;
+    padding: 56px;
+  }
+}

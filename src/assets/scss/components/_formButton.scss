@@ -15,3 +15,16 @@
     height: 24px;
   }
 }
+
+@media (min-width: 640px) {
+  .form-button {
+    grid-column: 1/5;
+    justify-self: right;
+    width: 96px;
+    height: 96px;
+    &__icon {
+      width: 44px;
+      height: 44px;
+    }
+  }
+}

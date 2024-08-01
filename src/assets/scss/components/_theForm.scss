@@ -6,3 +6,11 @@
   grid-template-rows: 1fr auto;
   margin-bottom: 32px;
 }
+
+@media (min-width: 640px) {
+  .form {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 0;
+    gap: 0 16px;
+  }
+}

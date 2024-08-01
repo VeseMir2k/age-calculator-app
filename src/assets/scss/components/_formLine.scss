@@ -7,3 +7,9 @@
   align-self: center;
   border: none;
 }
+
+@media (min-width: 640px) {
+  .form-line {
+    grid-column: 1/5;
+  }
+}

@@ -1,17 +1,23 @@
-.form-group-error {
+.form-group-error,
+.form-error {
+  @include Body-font-mobile;
   position: absolute;
-  bottom: -21px;
   left: 0;
-  @include Body-mobile;
+  right: 0;
   color: $red-color;
 }
 
+.form-group-error {
+  bottom: -21px;
+}
+
 .form-error {
-  position: absolute;
   top: 88px;
-  left: 0;
-  right: 0;
-  @include Body-mobile;
-  color: $red-color;
-  //   text-align: center;
+}
+
+@media (min-width: 640px) {
+  .form-group-error,
+  .form-error {
+    @include Body-font;
+  }
 }

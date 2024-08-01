@@ -1,4 +1,4 @@
-@mixin HeadingL {
+@mixin HeadingL-font {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-style: italic;
@@ -7,7 +7,7 @@
   font-size: 104px;
 }
 
-@mixin HeadingL-mobile {
+@mixin HeadingL-font-mobile {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-style: italic;
@@ -16,7 +16,7 @@
   font-size: 56px;
 }
 
-@mixin HeadingM {
+@mixin HeadingM-font {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -24,7 +24,7 @@
   letter-spacing: 1px;
 }
 
-@mixin HeadingM-mobile {
+@mixin HeadingM-font-mobile {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -32,7 +32,7 @@
   letter-spacing: 1px;
 }
 
-@mixin HeadingS {
+@mixin HeadingS-font {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -40,7 +40,7 @@
   letter-spacing: 3px;
 }
 
-@mixin HeadingS-mobile {
+@mixin HeadingS-font-mobile {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -48,14 +48,14 @@
   letter-spacing: 3px;
 }
 
-@mixin Body {
+@mixin Body-font {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 14px;
 }
 
-@mixin Body-mobile {
+@mixin Body-font-mobile {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: italic;
