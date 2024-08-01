@@ -3,7 +3,6 @@
   &__label {
     @include HeadingS-font-mobile;
     color: $grey-color;
-    margin-bottom: 4px;
     &--error {
       color: $red-color;
     }
@@ -13,8 +12,12 @@
     border: 1px solid $line-color;
     border-radius: 8px;
     outline: none;
+    margin-top: 4px;
     padding: 16px;
     width: 100%;
+    &:focus {
+      border-color: $purple-color;
+    }
     &--error {
       border-color: $red-color;
     }
@@ -28,6 +31,7 @@
     }
     &__input {
       @include HeadingM-font;
+      margin-top: 8px;
     }
   }
 }
