@@ -33,31 +33,35 @@ export default {
     const year = ref('')
     const errors = ref({ day: '', month: '', year: '', date: '' })
 
+    const daysInMonth = (month, year) => {
+      return new Date(year, month, 0).getDate()
+    }
+
     const validateInput = (value, type) => {
       errors.value[type] = ''
 
       const num = parseInt(value, 10)
-      const currentDate = new Date()
-
-      const birthDate = new Date(year.value, month.value - 1, day.value)
-      // console.log('BIRTH ' + birthDate)
-      // console.log('CURRENT ' + currentDate)
 
       if (!value) {
         errors.value[type] = 'Field is empty'
       } else if (isNaN(num)) {
         errors.value[type] = `Invalid ${type}`
-      } else if (type === 'day' && (num < 1 || num > 31)) {
+      } else if (type === 'day' && (num < 1 || num > daysInMonth(month.value, year.value))) {
         errors.value[type] = 'Invalid day'
       } else if (type === 'month' && (num < 1 || num > 12)) {
         errors.value[type] = 'Invalid month'
-      } else if (currentDate < birthDate) {
-        errors.value[type] = 'Future date'
       }
     }
 
     const validateDate = () => {
-      errors.value.date = 'Error test'
+      errors.value.date = ''
+
+      const inputDate = new Date(year.value, month.value - 1, day.value)
+      const currentDate = new Date()
+
+      if (currentDate < inputDate) {
+        errors.value.date = 'Date cannot be in the future.'
+      }
     }
 
     const calculateAgeFunction = () => {

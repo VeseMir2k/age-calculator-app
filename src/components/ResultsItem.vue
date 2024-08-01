@@ -14,7 +14,7 @@ export default {
       required: true
     },
     result: {
-      type: Number,
+      type: [String, Number],
       required: true
     }
   }
