@@ -1,16 +1,16 @@
 .form {
-  position: relative;
   display: grid;
   gap: 32px 16px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr auto;
   margin-bottom: 32px;
+  position: relative;
 }
 
 @media (min-width: 640px) {
   .form {
+    gap: 0 16px;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 0;
-    gap: 0 16px;
   }
 }

@@ -1,63 +1,63 @@
 @mixin HeadingL-font {
   font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-  font-style: italic;
-  line-height: 110%;
-  letter-spacing: -1px;
   font-size: 104px;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 110%;
 }
 
 @mixin HeadingL-font-mobile {
   font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-  font-style: italic;
-  line-height: 110%;
-  letter-spacing: -1px;
   font-size: 56px;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 110%;
 }
 
 @mixin HeadingM-font {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
 @mixin HeadingM-font-mobile {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
 @mixin HeadingS-font {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
   letter-spacing: 3px;
 }
 
 @mixin HeadingS-font-mobile {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
   letter-spacing: 3px;
 }
 
 @mixin Body-font {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-style: italic;
   font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
 }
 
 @mixin Body-font-mobile {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-style: italic;
   font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
 }

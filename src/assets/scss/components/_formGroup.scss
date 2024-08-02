@@ -1,8 +1,10 @@
 .form-group {
   position: relative;
+
   &__label {
     @include HeadingS-font-mobile;
     color: $grey-color;
+
     &--error {
       color: $red-color;
     }
@@ -11,10 +13,11 @@
     @include HeadingM-font-mobile;
     border: 1px solid $line-color;
     border-radius: 8px;
-    outline: none;
     margin-top: 4px;
+    outline: none;
     padding: 16px;
     width: 100%;
+
     &:focus {
       border-color: $purple-color;
     }

@@ -1,35 +1,37 @@
 .form-button {
-  cursor: pointer;
-  position: relative;
-  grid-column: 1/4;
-  grid-row: 2/3;
-  width: 64px;
-  height: 64px;
-  justify-self: center;
   background-color: $purple-color;
   border: none;
   border-radius: 50px;
+  cursor: pointer;
   display: grid;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  height: 64px;
+  justify-self: center;
   place-items: center;
+  position: relative;
   transition: all 0.15s ease;
+  width: 64px;
+
   &:hover {
     background-color: $black-color;
   }
   &__icon {
-    width: 24px;
     height: 24px;
+    width: 24px;
   }
 }
 
 @media (min-width: 640px) {
   .form-button {
     grid-column: 1/5;
+    height: 96px;
     justify-self: right;
     width: 96px;
-    height: 96px;
+
     &__icon {
-      width: 44px;
       height: 44px;
+      width: 44px;
     }
   }
 }
